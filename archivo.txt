@@ -1,0 +1,6 @@
+Durazno, 3, 3
+Pera, 1, 1
+Sandía, 10, 1
+Manzana, 10, 10
+Mango, 10, 10
+Platano, 5, 2
