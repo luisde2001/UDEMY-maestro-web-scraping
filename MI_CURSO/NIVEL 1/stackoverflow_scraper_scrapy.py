@@ -46,3 +46,17 @@ class StackOverflowSpider(Spider):
 ### Scrapy no funciona ejecutando sin más el script, sino que hay que hacerlo funcionar con una especie de interprete.
 ### El resultado es la creación de una librería csv donde se almacentarán los datos item.add_xpath que queramos y que estén en la clase Pregunta
 # Para hacerlo correr: >>> scrapy runspider stackoverflow_scraper_scrapy.py -o nombrenuevoarchivo.csv -t csv
+
+'''
+PARA HACER CORRER EL SCRIPT EN JUPYTERNOTEBOOK:
+1.- Importamos otra librería: 
+    from scrapy.crawler import CrawlerProcess
+2.- Ponemos las siguientes instrucciones al final
+            process = CrawlerProcess({
+            'FEED_FORMAT': 'csv',
+            'FEED_URI':'nombrenuevoarchivoipynb.csv'
+        })
+        process.crawl(StackOverflowSpider)
+        process.start()
+'''
+
