@@ -10,3 +10,4 @@ url = "https://stackoverflow.com/questions"
 respuesta = requests.get(url, headers=headers)
 
 soup = BeautifulSoup(respuesta.text)
+contenedor_de_preguntas = soup.find(id="questions") #Siempre, cuando buscamos algo único utilizaremos id
